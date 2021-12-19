@@ -1,6 +1,6 @@
 # 오목 AI
 
-!<img width="1146" alt="스크린샷 2021-12-19 오후 5 53 46" src="https://user-images.githubusercontent.com/44626833/146669185-4cd08bd4-04fe-4289-aa85-459f0a3917d6.png">
+<img width="1146" alt="스크린샷 2021-12-19 오후 5 53 46" src="https://user-images.githubusercontent.com/44626833/146669185-4cd08bd4-04fe-4289-aa85-459f0a3917d6.png">
 
 
 ## 프로젝트 및 동작 설명
