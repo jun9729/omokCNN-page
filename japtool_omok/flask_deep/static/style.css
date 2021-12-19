@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+ background-image: linear-gradient(to bottom right, #e1bee7, #b2ebf2);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ font-family: 'NIXGONM-Vb';
+}
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.wrapper{width: 1170px; margin: 0 auto;}
+.clearfix{content: ''; display: block; clear: both;}
+
+header{height: 75px;  position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;}
+.jtitle{color: white; float: left; line-height: 75px; padding-left: 50px;}
+.menu{float: right;}
+.menu li{float: left;}
+.menu a{line-height: 75px; color: white; padding: 0 15px; display: block;}
+
+
+.test-wrapper .overlay {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+   }
+    100% {
+        transform: rotate(360deg);
+   }
+}
+.test-wrapper .loading {
+    z-index: 1001;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    height: 50px;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    border-top-color: white;
+    animation: spin 1s infinite linear;
+}
+
+.test-wrapper .loadingText {
+    z-index: 1001;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    margin-left: -150px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+body {
+ font-family: 'NIXGONM-Vb';
+ background-color: rgba(1, 1, 1, 0);
+ box-sizing: border-box;
+ color: black;
+}
+
+.file-upload {
+   padding: 15% 3%;
+   margin: 0 auto;
+   border-radius: 10px;
+   border: solid 1.5px #f6f7fa;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.file-upload-btn {
+ width: 100%;
+ margin: 0;
+ color: #fff;
+ background: #1FB264;
+ border: none;
+ padding: 10px;
+ border-radius: 4px;
+ border-bottom: 4px solid #15824B;
+ transition: all .2s ease;
+ outline: none;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+.file-upload-btn:hover {
+ background: #1AA059;
+ color: #ffffff;
+ transition: all .2s ease;
+ cursor: pointer;
+}
+
+.file-upload-btn:active {
+ border: 0;
+ transition: all .2s ease;
+}
+
+.file-upload-content {
+ display: none;
+ text-align: center;
+}
+
+#loading{
+   display: none;
+}
+
+.file-upload-input {
+ position: absolute;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+ outline: none;
+ opacity: 0;
+ cursor: pointer;
+}
+
+.image-upload-wrap {
+   width: 60%;
+   margin: 0 auto;
+   position: relative;
+   object-fit: contain;
+   border-radius: 10px;
+   border: dashed 1.5px #35465d;
+   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+   background-color: #35465d82;
+   border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+ padding: 0 15px 15px 15px;
+ color: #222;
+}
+
+.drag-text {
+ text-align: center;
+}
+
+.drag-text h3 {
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
+.file-upload-image {
+ max-height: 60%;
+ max-width: 60%;
+ margin: auto;
+ padding: 10px;
+}
+
+.try-again-btn {
+ margin-top: 30px;
+ border-radius: 40px;
+ border: solid 1.5px #35465d;
+ background-color: #35465d;
+}
+
+.try-again-text {
+ display: block;
+ font-size: 1.5rem;
+ text-align: center;
+ color: #ffffff;
+ padding: 4px 15px;
+}
+
+
+.remove-image:hover {
+ background: #c13b2a;
+ color: #ffffff;
+ transition: all .2s ease;
+ cursor: pointer;
+}
+
+.remove-image:active {
+ border: 0;
+ transition: all .2s ease;
+}
+
+.nav-distance {
+   padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+ font-family: 'NIXGONM-Vb';
+ line-height: 1.68;
+ text-align: left;
+ color: #ffffff; 
+ text-shadow: 1px 1px 1px gray;
+}
+
+.navbar-light .navbar-toggler {
+   border-color: rgba(0, 0, 0, 0);
+}
+
+.section {
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.title {
+ line-height: 150px;
+ text-align: center;
+ color: #ffffff;
+ text-shadow: 1.5px 1.5px 1.5px #333;
+}
+
+.subtitle {
+ line-height: 1.53;
+ text-align: center;
+ color: #ffffff;
+ margin-bottom: 60px;
+ text-shadow: 1.5px 1.5px 1.5px #333;
+}
+
+.gender {
+ line-height: 1.53;
+ text-align: center;
+ color: #ffffff;
+ margin-bottom: 20px;
+ text-shadow: 1.5px 1.5px 1.5px #333;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+ html {
+   font-size: 10px;
+ }
+   .navbar-brand {
+       font-size: 2rem;
+   }
+}
+
+.upload {
+   width: 20%;
+}
+
+.upload-text {
+   width: 58%;
+   font-family: 'NIXGONM-Vb';
+   font-size: 1.5rem;
+   line-height: 1.53;
+   text-align: center;
+   color: #35465d;
+   margin: 0 auto;
+}
+
+
+
+
+
+.upload-text {
+   width: 58%;
+   font-size: 1.5rem;
+   line-height: 1.53;
+   text-align: center;
+   color: #35465d;
+   margin: 0 auto;
+}
+
+.footer {
+   background-color: initial;
+   color: initial;
+}
+
+.bar-container {
+ height: 2.7rem;
+}
+.cute-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ width: 100%;
+ background-color: rgba(237, 199, 121, 0.3);
+}
+.cute-bar {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ background-color: rgba(237, 199, 121, 1);
+}
+.sexy-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ width: 100%;
+ background-color: rgba(215, 127, 110, 0.3);
+}
+.sexy-bar {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ background-color: rgba(215, 127, 110, 1);
+}
+.innocent-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ width: 100%;
+ background-color: rgba(115, 165, 152, 0.3);
+}
+.innocent-bar {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ background-color: rgba(115, 165, 152, 1);
+}
+.fresh-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ width: 100%;
+ background-color: rgba(169, 188, 139, 0.3);
+}
+.fresh-bar {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ background-color: rgba(169, 188, 139, 1);
+}
+
+.elegant-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ width: 100%;
+ background-color: rgba(237, 223, 185, 0.3);
+}
+.elegant-bar {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 2rem;
+ border-radius: 10px;
+ background-color: rgba(237, 223, 185, 1);
+}
+
+.percent-text {
+ font-size: 1rem;
+ font-weight: 700;
+ color: #ffffff;
+}
+.keyword-label {
+   width: 20%;
+   text-align: left;
+   text-shadow: 1.5px 1.5px 1.5px #555;
+   height: 2rem;
+}
+#label-container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.result-message {
+   font-size: 2rem;
+}
+
+
+.keyword-explain {
+   font-size: 1.5rem;
+   text-shadow: 1.5px 1.5px 1.5px #555;
+}
+.cute-keyword-title {
+   color: #3ba363;
+}
+.cute-keyword-celeb {
+   color: #3ba363;
+   font-size: 1.2rem;
+}
+.sexy-keyword-title {
+   color: #3ba363;
+}
+.sexy-keyword-celeb {
+   color: #3ba363;
+   font-size: 1.2rem;
+}
+.fresh-keyword-title {
+   color: #ff6c0a;
+}
+.fresh-keyword-celeb {
+   color: #ff6c0a;
+   font-size: 1.2rem;
+}
+.innocent-keyword-title {
+   color: #548dd4;
+}
+.innocent-keyword-celeb {
+   color: #548dd4;
+   font-size: 1.2rem;
+}
+.elegant-keyword-title {
+   color: #548dd4;
+}
+.elegant-keyword-celeb {
+   color: #548dd4;
+   font-size: 1.2rem;
+}
+
+.noface-keyword-title {
+   color: #222222;
+}
+/* gender */
+input#gender {
+ display: none;
+}
+
+label {
+ cursor: pointer;
+ display: inline-block;
+ width: 90px;
+ height: 41px;
+ box-shadow: 0 0 0 8px #e5e9ea inset;
+ border-radius: 30px;
+ position: relative;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+   color: rgba(255, 255, 255, 0.8);
+}
+
+.button-cover, .knobs, .layer
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.button
+{
+   position: relative;
+   top: 50%;
+   width: 111px;
+   height: 54px;1
+   margin: -30px auto 0 auto;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+.button.r, .button.r .layer
+{
+   margin: auto;
+   border-radius: 150px;
+}
+
+.button.b2
+{
+   border-radius: 3px;
+}
+
+.checkbox
+{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   opacity: 0;
+   cursor: pointer;
+   z-index: 3;
+}
+
+.knobs
+{
+   z-index: 2;
+}
+
+.layer
+{
+   width: 100%;
+   background-color: #ebf7fc;
+   transition: 0.3s ease all;
+   z-index: 1;
+}
+
+#button-3 .knobs:before
+{
+   content: '남자';
+   position: absolute;
+   top: 8.25px;
+   left: 6px;
+   width: 37.5px;
+   height: 37.5px;
+   color: rgba(255, 255, 255, 1);
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1;
+   padding: 13.5px 6px;
+   background-color: rgba(3, 169, 244, 1);
+   border-radius: 50%;
+   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before
+{
+   width: 69px;
+   border-radius: 150px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before
+{
+   margin-left: -39px;
+}
+
+#button-3 .checkbox:checked + .knobs:before
+{
+   content: '여자';
+   left: 67.5px;
+   background-color: rgba(244, 67, 54, 1);
+}
+
+#button-3 .checkbox:checked ~ .layer
+{
+   background-color: rgba(252,235, 235, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
