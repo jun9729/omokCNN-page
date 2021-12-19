@@ -7,7 +7,8 @@
 
 - 이 프로젝트는 컨볼루션 신경망을 이용하여만든 오목 AI 웹게임이다.
 - 학습 데이터셋은 <https://gomocup.org/results/> 에서 2017년 데이터셋을 사용하였다.
-
+- Tensorflow를 이용하여 CNN 모델을 제작하였으며 Tensorflow 공식문서의 방법대로 javascript 에서 사용할수 있도록 변환하였다. 참조 : <https://www.tensorflow.org/js/guide/conversion?hl=ko>
+- pip install flask 후 start__flask.py 실행
 
 ### Requirements
 - flask
